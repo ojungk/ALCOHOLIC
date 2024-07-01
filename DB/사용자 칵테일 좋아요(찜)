@@ -9,7 +9,7 @@ CREATE TABLE tbl_user_cocktail_likes
 );
 
 -- 테이블 Comment 설정 SQL - tbl_user_cocktail_likes
-ALTER TABLE tbl_user_cocktail_likes COMMENT '사용자 칵테일 좋아요';
+ALTER TABLE tbl_user_cocktail_likes COMMENT '사용자 칵테일 좋아요(찜)';
 
 -- Foreign Key 설정 SQL - tbl_user_cocktail_likes(user_ct_idx) -> tbl_user_cocktail(user_ct_idx)
 ALTER TABLE tbl_user_cocktail_likes
