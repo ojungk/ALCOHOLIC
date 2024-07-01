@@ -18,9 +18,3 @@
         ON tbl_user(user_nick, user_phone);--
 
 
-```ruby
-require 'redcarpet'
-markdown = redcarpet.new("Hello world");
-puts markdown.to_html
-```
-
