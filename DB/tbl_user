@@ -1,4 +1,4 @@
-```ruby
+```
 -- 테이블 생성 SQL - tbl_user
 CREATE TABLE tbl_user
 (
