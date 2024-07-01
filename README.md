@@ -48,10 +48,10 @@
 
 #### **4. 칵테일 추천!
 
-<img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/721c6519-dac1-48e6-bd8a-8526c0929bfa" width="600" height="350"/><><br>
-<img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/179f2912-22fd-4490-baa4-fe4f69beadef" width="600" height="350"/><><br>
-
-
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/721c6519-dac1-48e6-bd8a-8526c0929bfa" width="600" height="350"/><br>
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/179f2912-22fd-4490-baa4-fe4f69beadef" width="600" height="350"/><br>
+- 사용자가 찜 누른 칵테일의 베이스 술의 종류 , 도수의 정보를 기준으로 사용자마다 다른 칵테일을 추천
+- 추천한 칵테일 찜,댓글 작성(조회) 가능!
 
 
 
