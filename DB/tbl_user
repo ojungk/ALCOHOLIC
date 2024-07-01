@@ -1,3 +1,4 @@
+```
 -- 테이블 생성 SQL - tbl_user
 CREATE TABLE tbl_user
 (
@@ -15,5 +16,5 @@ ALTER TABLE tbl_user COMMENT '유저정보';
 
 -- Unique Index 설정 SQL - tbl_user(user_nick, user_phone)
 CREATE UNIQUE INDEX UQ_tbl_user_1
-    ON tbl_user(user_nick, user_phone);
-  
+    ON tbl_user(user_nick, user_phone)
+```
