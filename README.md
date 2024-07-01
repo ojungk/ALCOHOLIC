@@ -49,7 +49,7 @@
 #### **4. 칵테일 추천!
 
 <img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/721c6519-dac1-48e6-bd8a-8526c0929bfa" width="600" height="350"/><><br>
-<img src ="https://https://github.com/ojungk/ALCOHOLIC/assets/166587746/179f2912-22fd-4490-baa4-fe4f69beadef" width="600" height="350"/><><br>
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/179f2912-22fd-4490-baa4-fe4f69beadef" width="600" height="350"/><><br>
 
 
 
