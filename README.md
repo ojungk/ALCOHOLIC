@@ -28,7 +28,11 @@
 #### **2. 칵테일 조건별 검색** , **재료 조건별 검색**
 ![image](https://github.com/rwd04272/firstrepo/assets/166587746/7f1751e1-37ae-4253-a2ec-5d17ffd64c5a)
 ![image](https://github.com/rwd04272/firstrepo/assets/166587746/124d335f-319b-445d-a54d-ec30907a77f9) <br>
-<img src = "https://github.com/ojungk/ALCOHOLIC/assets/166587746/5248bad9-f434-47a3-8102-b4934a14796d"  width="400" height="250"/><br>
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/166587746/a306807f-089f-4660-abc7-564e0ccd8f45"  width="400" height="250"/><br>
+(보드카 , 10%~20%)의 이미지
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/5bfa778f-e41e-4fd7-ad0f-e1f6f2810d0a"><br>
+(진 , 20% ) 의 이미지
+
 
 
 - 술의 종류,도수별 검색 기능.
