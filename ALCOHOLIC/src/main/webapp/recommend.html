@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ALCOHOLIC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        #ig {
+            padding-bottom: 0px;
+        }
+
+        #writing {
+            position: relative;
+            padding-bottom: 10px;
+            text-align: right;
+            padding-top: 0px;
+        }
+
+        #cocktail-section {
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        #feed-content {
+            padding-top: 20px;
+        }
+
+        .blog-entry .text {
+            margin-bottom: 5px;
+            padding-top: 0px !important;
+        }
+
+        .search_text {
+            margin-right: 60px;
+            margin-bottom: 2px;
+        }
+
+        .section {
+            padding-bottom: 250px;
+        }
+
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 92%;
+            margin-left: 100px;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+
+        }
+
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+
+        .services-wrap.d-flex {
+            height: 250px;
+        }
+
+        .price {
+            position: absolute;
+            bottom: 5px;
+        }
+
+        .text.p-1>h3+p {
+            width: 220px;
+            line-height: 2.0;
+            height: calc(5);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+
+        #recommend-info {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: black;
+            background-color: rgba(155, 152, 152, 0.945);
+            margin-bottom: 170px;
+            max-width: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <h2 id="login-logo"></h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Welcome
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="welcome.jsp" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.jsp" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="ingredient.jsp" class="nav-link">Ingredient</a></li>
+                    <li class="nav-item "><a href="feed.jsp" class="nav-link">Feed</a></li>
+                    <li class="nav-item"><a href="board.jsp" class="nav-link">Board</a></li>
+                    <li class="nav-item"><a href="mypage.jsp" class="nav-link">Mypage</a></li>
+                    <li class="nav-item"><a href="LogoutService" class="nav-link">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search_text">
+            <input type="text" class="form-control2" id="searchQuery3" placeholder="검색어를 입력하세요">
+            <button type="button" class="btn-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- END nav -->
+    <section class="ftco-section" id="ig">
+        <div class="recommend-ct">
+            <h1 style="text-align: center; margin-top:20px; margin-bottom: 50px;">✨Recommend✨</h1>
+            <h5 id="recommend-info">이름도 어렵고🤔 종류도 너무 많은 칵테일🍹<br>어떤 칵테일을 고를지 고민되시는 분들을🧐 위해 준비했어요!<br>
+              취향에 맞는 칵테일을 찾아보세요!💚</h5>
+            <div class="container">
+              <div class="row d-flex" id="cocktail-list2">
+              </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+            </div>
+          </div>
+
+
+        <section class="section">
+            <h3 style="margin-left:100px; margin-bottom: 40px;"><span style="color:#3dbf78;">✔</span>칵테일을 <span
+                    style="color:#3dbf78;">처음</span> 접하시는 분들이라면? 이런 칵테일을 추천드릴게요!👍</h3>
+
+            <div class="slider-container" id="ct-1">
+                <button class="arrow arrow-left">&lt;</button>
+                <div class="slider">
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/c20.jpg" alt="잭콕(Jack Coke)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3 style="margin-left:2px;">잭 콕<br>(Jack Coke)</h3>
+                                            <p style="margin-right: 10px;">잭다니엘 위스키와 콜라의 줄임말으로 우리나라 사람들이 좋아하는 칵테일 중 하나로
+                                                꼽힐 <br>정도로 인기가 좋다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>10%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/c21.jpg" alt="데킬라 선라이즈(Tequila Sunrise)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>카시스 프라페<br>(Cassis Frappe)</h3>
+                                            <p>카시스의 맛이 두드러지며, 단맛이 풍부해 알콜향을 역하게 느끼시는 분들께 좋은 칵테일입니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>9%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/c22.jpg" alt="#" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>네그로니<br>(Negroni)</h3>
+                                            <p>세계에서 가장 인기있는 칵테일 조사 1위에 해당하는 칵테일. 이탈리아 네그로니 백작이 즐겨마시던 술이라는 유래가 있습니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>11%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/c4.jpg" alt="피나 콜라다(Pina Colada)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>피나 콜라다<br>(Pina Colada)</h3>
+                                            <p>스페인어로 채에 거른 파인애플이라는 뜻으로 인기있는 트로피컬 칵테일이다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>15%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/모히또.jpg" alt="모히또" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>모히또<br>(Mojito)</h3>
+                                            <p>여름 파티에서 인기 있는 스페인 전통 와인 칵테일.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>15~20%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/미도리샤워.jfif" alt="미도리사워" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>미도리사워<br>(MIDORI SOUR)</h3>
+                                            <p>멜론맛인 미도리와 스윗&사워 믹스의 레몬향이 어우러져서 상큼한 색깔과 맛을 낸다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>4%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/깔루아밀크.webp" alt="깔루아밀크" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>깔루아밀크<br>(Kahlua Milk)</h3>
+                                            <p>우유에 커피 리큐르인 깔루아를 섞은 것으로 달콤하고 부드럽다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/피치크러쉬.jpg" alt="피치크러쉬" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>피치크러쉬<br>(Peach Crush)</h3>
+                                            <p>피치 슈냅스 계열의 리큐르와 이런 저런 주스들을 잘 섞어서 만드는 한잔. 복숭아 향이나며 약간 새콤한 맛의 칵테일이다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>7%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow arrow-right">&gt;</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 style="margin-left:770px; margin-bottom: 40px;"><span style="color:orange;">✔</span>쎈 술은 싫어요! <span
+                    style="color:orange;">적당한 도수</span>를 원하시는 분들이라면? 이런 칵테일을 추천드릴게요!👍</h3>
+            <div class="slider-container">
+                <button class="arrow arrow-left">&lt;</button>
+                <div class="slider">
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/미도리샤워.jfif" alt="미도리샤워(MIDORI SOUR)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>미도리샤워<br>(MIDORI SOUR)</h3>
+                                            <p>멜론맛인 미도리와 스윗&사워 믹스의 레몬향이 어우러져서 상큼한 색깔과 맛을 낸다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>4%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/깔루아밀크.webp" alt="깔루아밀크(Kahlua Milk)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>깔루아밀크<br>(Kahlua Milk)</h3>
+                                            <p>우유에 커피 리큐르인 깔루아를 섞은 것으로 달콤하고 부드럽다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/카시스프라페.jpg" alt="카시프 프라페(Cassis Frappe)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>카시스 프라페<br>(Cassis Frappe)</h3>
+                                            <p>카시스, 코코넛, 복숭아 등 여러 과일이 섞인 달콤한 맛이 나며, 잘게 부서진 얼음을 채워 놓은<br> 것이 특징입니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>8%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/피치크러쉬.jpg" alt="피치크러쉬(Peach Crush)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>피치크러쉬<br>(Peach Crush)</h3>
+                                            <p>피치 슈냅스 계열의 리큐르와 이런 저런 주스들을 잘 섞어서 <br>만드는 한잔. 복숭아 향이나며<br>약간 새콤한 맛의 칵테일이다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>7%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/베일리스밀크.jfif" alt="베일리스밀크" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>베일리스밀크<br>(Baileys Milk)</h3>
+                                            <p>밀크쉐이크와 비슷한 느낌의 달달한 칵테일.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>8%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/동해.jpg" alt="동해" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>동해<br>(East Sea)</h3>
+                                            <p>블루하와이의 한국 버전. 열대과일과 소다맛이 난다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/벨리니.jpg" alt="벨리니" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>벨리니<br>(Bellini)</h3>
+                                            <p>복숭아가 들어가 무척 상큼하면서도 샴페인의 탄산과 조화를 이루는 맛으로 표현된다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/벅스피즈.jpg" alt="벅스피즈" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>벅스피즈<br>(Buck's Fizz)</h3>
+                                            <p>오렌지맛 와인으로 달달 상큼!</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>4%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow arrow-right">&gt;</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 style="margin-left:100px; margin-bottom: 40px;"><span style="color:yellowgreen;">✔</span>도수는 상관없어요! <span
+                    style="color:yellowgreen;">맛있는</span> 칵테일을 원하시는 분들이라면? 이런 칵테일을 추천드릴게요!👍</h3>
+
+            <div class="slider-container">
+                <button class="arrow arrow-left">&lt;</button>
+                <div class="slider">
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/애플마티니.jfif" alt="애플 마티니(Apple Martini)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>애플 마티니<br>(Apple Martini)</h3>
+                                            <p>첫 입에 살짝 쓴 맛 후에 뒤따르는 사과의 달콤한 향과 맛이 <br>어우러지는 칵테일 입니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>18%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/롱아일랜드아이스티.webp" alt="롱아일랜드아이스티(Long Island Iced Tea)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>롱아일랜드 아이스티<br>(Long Island Iced)</h3>
+                                            <p>레몬맛이 강한 아이스 티와 어느 정도 비슷하고, 콜라의 단맛이<br>알콜 맛을 어느 정도 감춰주어<br>마시기 쉽다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>19%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/네그로니.webp" alt="네그로니(Negroni)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>네그로니<br>(Negroni)</h3>
+                                            <p>캄파리 특유의 쌉쌀한 맛이 스위트 베르무트의 달짝지근한 맛과 어울리면서 진의 향과 맛과 조화를 이루는 맛이다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>26%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/코스모폴리탄.webp" alt="코스모폴리탄(Cosmopolitan)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>코스모폴리탄<br>(Cosmopolitan)</h3>
+                                            <p>새콤함과 달콤함이 비슷하며, 살짝 혀를 아리는 듯한 쓴맛이 희미하게 있어 입안의 감촉이 재미 있습니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>25%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/마가리타.webp" alt="마가리타(Margarita)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>마가리타<br>(Margarita)</h3>
+                                            <p>상큼하고 새콤달콤한 느낌. 라임 주스의 상큼함과 테킬라의 깔끔하고 약간의 쓴맛,오렌지 향이 어우러져 매우 신선한 맛을 냅니다.
+                                            </p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>25%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/마이타이.webp" alt="마이타이(Mai Tai)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>마이타이<br>(Mai Tai)</h3>
+                                            <p>트로피컬하고 복합적인 맛이 특징입니다.오렌지 큐라소와 오르젯 시럽이 달콤한 느낌을 줍니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>28%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/비에스코피어.webp" alt="비에스코피어(Vieux Carre)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>비에스코피어<br>(Vieux Carre)</h3>
+                                            <p>스위트 베르무트의 단맛과 허브 향이 어우러져 복잡한 풍미를 냅니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>32%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/맨허튼.jfif" alt="맨허튼(Manhattan)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>맨허튼<br>(Manhattan)</h3>
+                                            <p>버번 위스키, 스위트 베르무트, 앙고스트라 비터스를 섞어 만든 클래식 칵테일입니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>30%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow arrow-right">&gt;</button>
+            </div>
+        </section>
+
+
+
+        <section class="section">
+            <h3 style="margin-left:790px; margin-bottom: 40px;"><span style="color:skyblue;">✔</span>재료⬇<span
+                style="color:skyblue;"> 간단하게 </span>만들 수 있는 칵테일을 원하신다면? 이런 칵테일을 추천드릴게요!👍</h3>
+            <div class="slider-container">
+                <button class="arrow arrow-left">&lt;</button>
+                <div class="slider">
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/레몬깻잎모히또.jpg" alt="레몬깻잎모히또(Lemon Sesame mojito)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>레몬 깻잎 모히또<br>(Lemon Sesame mojito)</h3>
+                                            <p>라임과 민트 대신 시중에서 쉽게 구할 수 있는 레몬과 깻잎으로<br> 충분히 대체가 가능합니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>7%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/하이볼.jpg" alt="하이볼(high ball)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>하이볼<br>(high ball)</h3>
+                                            <p>위스키나 브랜디에 탄산수나 다른 탄산음료를 넣고 얼음을 넣어 먹습니다. 술과 음료의 비율에<br>따라 맛이 달라집니다!</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>15%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/와인에이드.jfif" alt="와인에이드(wineAde)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>와인에이드<br>(wineAde)</h3>
+                                            <p>남은 와인만 있다면 뚝딱 만들어 마실 수 있는 와인에이드!<br> 와인 에이드의 비율은<br>와인 1,탄산수4입니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>8%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/복분자진토닉.jpg" alt="복분자진토닉(Bokbunga Tonic)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>복분자 진토닉<br>(Bokbunga Tonic)</h3>
+                                            <p>복분자와 진토닉를 섞은 칵테일이다. 일반적인 비율은 복분자1 진토닉 3 복분자의 맛을 더 느끼고싶으면 비율을 바꿔보자!</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5~8%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="container-wrap">
+                            <div class="row no-gutters d-flex">
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/요구르트소주.jpg" alt="요구르트소주" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>요구르트소주<br></h3>
+                                            <p>소주에 요구르트를 섞은 음료로, 부드럽고 과일처럼 상큼한 맛</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>6~12%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/참이슬초코.jpg" alt="참이슬초코" style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>참이슬초코<br></h3>
+                                            <p>참이슬 소주와 초콜릿 우유를 섞어 만든 음료로, 달콤하고 부드러운 맛이 특징</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5~10%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/레몬에이드소주.jpg" alt="블루레몬에이드소주"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>블루레몬에이드소주<br></h3>
+                                            <p>소주와 상큼한 레몬에이드를 섞어 만든 음료로, 가벼우면서도 상쾌한 맛을 제공 편의점꿀조합!</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>5~10%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col d-flex ftco-animate">
+                                    <div class="services-wrap d-flex">
+                                        <img src="images/보드카크랜베리.jpg" alt="보드카크랜베리(Vodka Cranberry)"
+                                            style="width: 50%; height: 250px;">
+                                        <div class="text p-1">
+                                            <h3>보드카크랜베리<br>(Vodka Cranberry)</h3>
+                                            <p>보드카는 무색, 무취의 술이기 때문에 술 맛이 크게 느껴지지 않고, 크랜베리의 향과 함께 매우 깔끔하게 마시기 좋습니다.</p>
+                                            <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                    </span></span><span>15~20%</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow arrow-right">&gt;</button>
+            </div>
+        </section>
+
+    </section>
+
+
+    <section class="section">
+        <h3 style="margin-left:100px; margin-bottom: 40px;"><span style="color:pink;">✔</span>봄, 여름에 즐기는 <span
+            style="color:pink;">산뜻한</span> 칵테일을 원하신다면? 이런 칵테일을 추천드릴게요!👍</h3>
+        <div class="slider-container">
+            <button class="arrow arrow-left">&lt;</button>
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="container-wrap">
+                        <div class="row no-gutters d-flex">
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/민트줄렙.jpg" alt="민트줄렙(Mint Julep)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>민트 줄렙<br>(Mint Julep)</h3>
+                                        <p>신선하고 상큼한 민트 향이 봄을 떠올리게 합니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>25%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/스프링베르베.webp" alt="스프링베르베(Spritz Veneziano)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>스프링 베르베(아페롤 스프리즈)<br>(Spritz Veneziano)</h3>
+                                        <p>가벼운 탄산수와 함께 즐기는 이탈리안 스프리츠 칵테일.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>11%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/스트로베리딜라이트.jfif" alt="스트로베리딜라이트(Strawberry Delight)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>스트로베리 델라이트<br>(Strawberry Delight)</h3>
+                                        <p>딸기를 사용한 달콤한 봄 칵테일 재료에 따라 무알콜로 즐길수 있다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>0~10%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/상그리아.jpg" alt="상그리아(Sangria)" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>상그리아<br>(Sangria)</h3>
+                                        <p>여름 파티에서 인기 있는 스페인 전통 와인 칵테일.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>4~12%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="container-wrap">
+                        <div class="row no-gutters d-flex">
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/모히또.jpg" alt="모히또(Mojito)" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>모히또<br>(Mojito)</h3>
+                                        <p>여름 파티에서 인기 있는 스페인 전통 와인 칵테일.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>15~20%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/레몬버베나.jfif" alt="레몬 버베나(Lemon Verbena)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>레몬 버베나<br>(Lemon Verbena)</h3>
+                                        <p>상쾌하고 청량감 있는 레몬 향이 특징적인 칵테일로,여름에 시원하게 즐기기 좋습니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>30~40%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/바나나콜라다.jfif" alt="바나나 콜라다 (Banana Colada)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>바나나 콜라다<br>(Banana Colada)</h3>
+                                        <p>부드럽고 달콤한 바나나와 코코넛의 조화가 잘 어우러진 칵테일로,봄의 따뜻한 날에 잘 어울립니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>10~15%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/페퍼민트패션.jpeg" alt=" 페퍼민트 패션 (Peppermint Passion)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>페퍼민트 패션<br>(Peppermint Passion)</h3>
+                                        <p>향긋한 페퍼민트와 상큼한 자몽의 조화가 매력적인 칵테일로, 봄과 여름의 신선한 느낌을 전해줍니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>40%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow arrow-right">&gt;</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3 style="margin-left:705px; margin-bottom: 40px;"><span style="color:brown;">✔</span>가을, 겨울에 마시면 좋을<span
+            style="color:brown;"> 부드러운</span> 칵테일을 원하신다면? 이런 칵테일을 추천드릴게요!👍</h3>
+        <div class="slider-container">
+            <button class="arrow arrow-left">&lt;</button>
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="container-wrap">
+                        <div class="row no-gutters d-flex">
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/c23.webp" alt="#" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>뱅쇼 <br>(vin chaud) </h3>
+                                        <p> 프랑스어로 따뜻한 포도주라는 뜻. 과일과 계피를 비롯한 향신료를 끓여만든 음료수같은 술이다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>23%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/갓파더.jpg" alt="갓파더(God Father)" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>갓파더<br>(God Father)</h3>
+                                        <p>위스키의 깊고 진한 맛 끝에 아몬드 풍미가 묵직하고 중후해 주로 저녁 식사 후에 많이 애용된다. </p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>37%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/핫애플사이다.jpg" alt="핫애플사이다(Hot Apple Cider)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>핫 애플 사이다<br>(Hot Apple Cider)</h3>
+                                        <p>따뜻한 사이더에 럼을 넣어 감미로운 칵테일.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>4.5%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/핫토디.jpg" alt="핫 토디(Hot Toddy)" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>핫 토디<br>(Hot Toddy)</h3>
+                                        <p>레몬과 허니가 들어간 따뜻한 위스키 기반의 칵테일. </p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>12%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="container-wrap">
+                        <div class="row no-gutters d-flex">
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/에그노그.jpg" alt="에그노그(Eggnog)" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>에그노그<br>(Eggnog)</h3>
+                                        <p>거품을 내어 즐기는 가벼운 크림과 포도주를 기반으로 한 가을과 겨울철에 인기 있는 디저트 칵테일입니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>15%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/맨허튼.jfif" alt="맨허튼(anhattan)" style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>맨허튼<br>(Manhattan)</h3>
+                                        <p>버번 위스키, 스위트 베르무트, 앙고스트라 비터스를 섞어 만든 클래식 칵테일입니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>30%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/화이트러시안.jpg" alt="화이트러시안(White Russian)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>화이트 러시안<br>(White Russian)</h3>
+                                        <p>보드카를 베이스로 한 달콤하고 크림이 들어가 부드러운 칵테일입니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>20~25%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex ftco-animate">
+                                <div class="services-wrap d-flex">
+                                    <img src="images/스모키마티니.jfif" alt="스모키 마티니 (Smoky Martini)"
+                                        style="width: 50%; height: 250px;">
+                                    <div class="text p-1">
+                                        <h3>스모키 마티니<br>(Smoky Martini)</h3>
+                                        <p>진과 스모키한 메스퀴트를 사용하여 만든 칵테일입니다.</p>
+                                        <p class="price"><span id="degree"><span style="color:white">ABV :
+                                                </span></span><span>30~40%</span></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow arrow-right">&gt;</button>
+        </div>
+    </section>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliders = document.querySelectorAll('.slider-container');
+
+            sliders.forEach(sliderContainer => {
+                const slider = sliderContainer.querySelector('.slider');
+                const sliderItems = sliderContainer.querySelectorAll('.slider-item');
+                const arrowLeft = sliderContainer.querySelector('.arrow-left');
+                const arrowRight = sliderContainer.querySelector('.arrow-right');
+
+                let currentIndex = 0;
+
+                arrowLeft.addEventListener('click', () => {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : sliderItems.length - 1;
+                    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                });
+
+                arrowRight.addEventListener('click', () => {
+                    currentIndex = (currentIndex < sliderItems.length - 1) ? currentIndex + 1 : 0;
+                    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                });
+            });
+        });
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

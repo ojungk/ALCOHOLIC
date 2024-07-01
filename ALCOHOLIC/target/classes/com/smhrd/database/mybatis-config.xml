@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- db연결 해주는 파일명 경로까지 모두 작성 
+	패키지명 부터(파일 경로처럼/)-->
+<properties resource="com/smhrd/database/db.propertys"></properties>
+
+<!-- 패키지 경로를 축약해주는 역할 -->
+<typeAliases>
+<!-- 칵테일 -->
+	<typeAlias type="com.smhrd.model.cocDTO" alias="coc"/>
+	<!-- 재료 -->
+	<typeAlias type="com.smhrd.model.ingredientDTO" alias="ingred"/>
+	<!-- 유저칵테일 -->
+	<typeAlias type="com.smhrd.model.usercocDTO" alias="usercoc"/>
+	<!-- 유저 -->
+	<typeAlias type="com.smhrd.model.userDTO" alias="user"/>
+	<!-- 게시글 -->
+	<typeAlias type="com.smhrd.model.postDTO" alias="post"/>
+	<!-- 유저 칵테일 댓글 -->
+	<typeAlias type="com.smhrd.model.user_coc_commentDTO" alias="user_coc_comt"/>
+	<!-- 칵테일좋아요 -->
+	<typeAlias type="com.smhrd.model.coc_likeDTO" alias="like"/>
+	<!-- 즐겨찾기 -->
+	<typeAlias type="com.smhrd.model.pickDTO" alias="pick"/>
+	<!-- 칵테일댓글 -->
+	<typeAlias type="com.smhrd.model.coc_commentDTO" alias="coc_comt"/>
+	<!-- 믹스 -->
+	<typeAlias type="com.smhrd.model.mixDTO" alias="mix"/>
+	<!-- 개시글댓글 -->
+	<typeAlias type="com.smhrd.model.post_commentDTO" alias="post_comt"/>
+	<!-- 유저픽 -->
+	<typeAlias type="com.smhrd.model.user_coc_pickDTO" alias="user_pick"/>
+	<!-- 유저좋아요 -->
+	<typeAlias type="com.smhrd.model.user_coc_likeDTO" alias="user_like"/>
+	<!-- 유저레시피 -->
+	<typeAlias type="com.smhrd.model.user_recipeDTO" alias="user_recp"/>
+	
+</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+	<!-- 내가 사용할 mapper 작성 해주기 -->
+		<mapper resource="com/smhrd/database/cocMapper.xml" />
+	</mappers>
+</configuration>

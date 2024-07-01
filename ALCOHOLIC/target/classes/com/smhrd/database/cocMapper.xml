@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 순수 sql문만 작성 
+xml 하나가 아닐 수 있다 -> 여러개 만들어도 무관 (테이블 마다 1개의 mapper추천)-->
+<mapper namespace="cocMapper">
+<!-- sql문장 작성 - 태그로 작성 s
+id값 : 연결해줄 고유 아이디
+parmeterType : 입력받을 타입 작성(우리가 만든 타입인 경우 경로부터 작성)
+
+sql문 내 매개변수 채워 줄때 ?X ->#{변수명}
+-->
+
+
+<!-- 회원가입 -->   
+<insert id = "join" parameterType = "user">
+  insert into tbl_user values (#{user_id},SHA2(#{user_pw},256),#{user_nick},#{user_phone},now(),"1","pro_null.png")
+</insert>
+
+<!-- 로그인 -->
+<select id = "login" parameterType = "user" resultType ="user">
+   select * from tbl_user where user_id =#{user_id} and user_pw=SHA2(#{user_pw},256)
+</select>
+
+<!-- id 중복 체크 -->
+<select id="idCheck" parameterType="String" resultType="Integer">
+    select count(*) from tbl_user where user_id = #{user_id}
+</select>
+
+<!-- nick 중복 체크 -->
+<select id="nickCheck" parameterType="String" resultType="Integer">
+    select count(*) from tbl_user where user_nick = #{user_nick}
+</select>
+
+<select id="ingtype" parameterType="String" resultType="ingred">
+	select * from tbl_ingredient where ingre_type=#{type}
+</select>
+
+<select id="ingall" resultType="ingred">
+	select * from tbl_ingredient
+</select>
+
+<select id="cocall" resultType="coc">
+	select * from tbl_cocktail
+</select>
+<select id="cocatype" parameterType="String" resultType="coc">
+	select * from tbl_cocktail where locate(#{type},tbl_cocktail.ct_type)
+
+</select>
+<!--  -->
+<select id="cocbtype10"  resultType="coc">
+	select * from tbl_cocktail where CAST(ct_percent AS UNSIGNED)>0 and 10>CAST(ct_percent AS UNSIGNED)
+</select>
+<select id="cocbtype20"  resultType="coc">
+	select * from tbl_cocktail where CAST(ct_percent AS UNSIGNED)>10 and 20>CAST(ct_percent AS UNSIGNED)
+</select>
+<select id="cocbtype30"  resultType="coc">
+	select * from tbl_cocktail where CAST(ct_percent AS UNSIGNED)>20
+</select>
+<select id="cocabtype10" parameterType="String" resultType="coc">
+	select * from tbl_cocktail where locate(#{a},tbl_cocktail.ct_type) and CAST(ct_percent AS UNSIGNED)>0 and 10>CAST(ct_percent AS UNSIGNED)
+</select>
+
+<select id="cocabtype20" parameterType="String" resultType="coc">
+	select * from tbl_cocktail where locate(#{a},tbl_cocktail.ct_type) and CAST(ct_percent AS UNSIGNED)>10 and 20>CAST(ct_percent AS UNSIGNED)
+</select>
+
+<select id="cocabtype30" parameterType="String" resultType="coc">
+	select * from tbl_cocktail where locate(#{a},tbl_cocktail.ct_type) and CAST(ct_percent AS UNSIGNED)>20
+</select>
+
+<select id="loadingrsp" parameterType="String" resultType="coc">
+	select * from tbl_cocktail where locate(#{name},tbl_cocktail.ct_ingredient)
+</select>
+
+<update id="userupdate" parameterType="user">
+	update tbl_user set user_nick=#{user_nick} , user_pw=SHA2(#{user_pw},256) where user_id=#{user_id}
+</update>
+
+<update id="imgcange" parameterType="user">
+	update tbl_user set user_img=#{user_img}  where user_id=#{user_id} and user_nick=#{user_nick}
+</update>
+
+<insert id = "ct_like" parameterType = "like">
+  insert into tbl_cocktail_likes values (null,#{user_id},#{ct_idx},now())
+</insert>
+
+<select id="ct_ck_like" parameterType="like" resultType="like">
+	select * from tbl_cocktail_likes where user_id=#{user_id} and ct_idx=#{ct_idx}
+</select>
+<delete id="ct_dl_like" parameterType="like">
+	delete from tbl_cocktail_likes where user_id=#{user_id} and ct_idx=#{ct_idx}
+</delete>
+
+<select id="mypick" parameterType="String" resultType="coc">
+select a.ct_idx,ct_eng_name,ct_kor_name,ct_recipe,ct_ingredient,ct_garnish,ct_info,ct_percent,ct_img,ct_type
+from tbl_cocktail a,
+tbl_cocktail_likes b
+where user_id=#{user_id} and a.ct_idx = b.ct_idx;
+</select>
+
+<select id="ct_like_count" parameterType="String" resultType="_int">
+select count(*) from tbl_cocktail_likes where user_id = #{user_id};
+</select>
+<select id="load_post" resultType="post">
+	select * from tbl_post ORDER BY post_idx DESC
+</select>
+
+<!--  이미지 수정 업데이트 -->
+<update id="updateUserImage" parameterType="user">
+    UPDATE tbl_user
+    SET user_img = #{user_img}
+    WHERE user_nick = #{user_nick}
+</update>
+<insert id="up_post">
+insert into tbl_post values (null,#{post_title},#{post_content},#{post_img},0,now(),#{user_id})
+</insert>
+
+<insert id="comment_up" parameterType="coc_comt">
+	insert into tbl_cocktail_comment values(null,#{ct_idx},#{cmt_content},now(),#{user_id})
+</insert>
+
+<select id="comment_load" parameterType="int" resultType="coc_comt">
+	select * from tbl_cocktail_comment where ct_idx=#{ct_idx}
+</select>
+
+<select id="getid" parameterType="user" resultType="user">
+	select *  from tbl_user where user_id=#{user_id}
+</select>
+
+<select id="get_post" parameterType="post" resultType="post">
+	select * from tbl_post where post_idx=#{post_idx} 
+</select>
+
+<insert id="comment_up_post" parameterType="coc_comt">
+	insert into tbl_post_comment values(null,#{post_idx},#{cmt_content},now(),#{user_id})
+</insert>
+
+<select id="comment_post" parameterType="int" resultType="post_comt">
+	select * from tbl_post_comment where post_idx=#{post_idx}
+</select>
+
+<update id="up_view">
+	UPDATE tbl_post SET post_views=post_views+1 WHERE post_idx=#{post_idx}
+</update>
+
+<delete id="del_comment" parameterType="post_comt">
+	DELETE FROM tbl_post_comment WHERE cmt_idx=#{cmt_idx} and post_idx=#{post_idx}
+</delete>
+
+<update id="up_comt" parameterType="post_comt">
+	UPDATE tbl_post_comment SET cmt_content=#{cmt_content} WHERE post_idx=#{post_idx} and cmt_idx=#{cmt_idx}
+</update>
+
+<update id="update_post" parameterType="post">
+	update tbl_post set post_img=#{post_img}, post_content=#{post_content} where post_idx=#{post_idx}
+</update>
+
+<update id="update_post_noimg" parameterType="post">
+	update tbl_post set post_content=#{post_content} where post_idx=#{post_idx}
+</update>
+
+<delete id="delpost" parameterType="int">
+	DELETE FROM tbl_post WHERE post_idx=#{post_idx}
+</delete>
+
+<delete id="delcomt" parameterType="int">
+	DELETE FROM tbl_post_comment WHERE post_idx=#{post_idx}
+</delete>
+
+<update id="up_comt_ct" parameterType="coc_comt">
+	UPDATE tbl_cocktail_comment SET cmt_content=#{cmt_content} WHERE ct_idx=#{ct_idx} and cmt_idx=#{cmt_idx}
+</update>
+
+<delete id="del_comment_ct" parameterType="coc_comt">
+	DELETE FROM tbl_cocktail_comment WHERE cmt_idx=#{cmt_idx} and ct_idx=#{ct_idx}
+</delete>
+
+<select id="Load_Feed" resultType="usercoc">
+	select * from tbl_user_cocktail ORDER BY user_ct_idx DESC
+</select>
+
+<select id="cmt_cnt" parameterType="String" resultType="_int">
+	select count(*) from tbl_user_cocktail_comment where user_ct_idx = CAST(#{user_ct_idx} AS UNSIGNED);
+</select>
+
+<insert id="feedupload" parameterType="usercoc">
+	insert into tbl_user_cocktail values(null,#{user_id},null,#{user_cocktail_img},#{user_cocktail_ing},#{user_cocktail_rsp},#{user_cocktail_title},now(),#{user_cocktail_content})
+</insert>
+
+<select id="get_feed" parameterType="int" resultType="usercoc">
+	select * from tbl_user_cocktail where user_ct_idx=#{user_ct_idx} 
+</select>	
+
+<insert id="comment_up_feed" parameterType="user_coc_comt">
+	insert into tbl_user_cocktail_comment values(null,#{user_ct_idx},#{cmt_content},now(),#{user_id})
+</insert>
+
+<select id="comment_feed" parameterType="int" resultType="user_coc_comt">
+	select * from tbl_user_cocktail_comment where user_ct_idx=#{user_ct_idx}
+</select>
+
+<select id="user_ct_ck_like" parameterType="user_like" resultType="user_like">
+	select * from tbl_user_cocktail_likes where user_id=#{user_id} and user_ct_idx=#{user_ct_idx}
+</select>
+
+<select id="user_img_get" parameterType="String" resultType="user">
+	select * from tbl_user where user_id=#{user_id}
+</select>
+
+<insert id = "user_ct_like" parameterType = "user_like">
+  insert into tbl_user_cocktail_likes values (null,#{user_id},#{user_ct_idx},now())
+</insert>
+
+<delete id="user_ct_dl_like" parameterType="user_like">
+	delete from tbl_user_cocktail_likes where user_id=#{user_id} and user_ct_idx=#{user_ct_idx}
+</delete>
+
+<update id="up_comt_feed" parameterType="user_coc_comt">
+	UPDATE tbl_user_cocktail_comment SET cmt_content=#{cmt_content} WHERE user_ct_idx=#{user_ct_idx} and cmt_idx=#{cmt_idx}
+</update>
+
+<delete id="del_comment_feed" parameterType="user_coc_comt">
+	DELETE FROM tbl_user_cocktail_comment WHERE cmt_idx=#{cmt_idx} and user_ct_idx=#{user_ct_idx}
+</delete>
+
+<update id="update_feed" parameterType="usercoc">
+	update tbl_user_cocktail set user_cocktail_img=#{user_cocktail_img},
+								 user_cocktail_ing=#{user_cocktail_ing},
+								 user_cocktail_rsp=#{user_cocktail_rsp},
+								 user_cocktail_title=#{user_cocktail_title},
+								 user_cocktail_content=#{user_cocktail_content} where user_ct_idx=#{user_ct_idx}
+</update>
+
+<update id="update_feed_noimg" parameterType="usercoc">
+	update tbl_user_cocktail set user_cocktail_ing=#{user_cocktail_ing},
+								 user_cocktail_rsp=#{user_cocktail_rsp},
+								 user_cocktail_title=#{user_cocktail_title},
+								 user_cocktail_content=#{user_cocktail_content} where user_ct_idx=#{user_ct_idx}
+</update>
+
+<delete id="delfeed" parameterType="int">
+	DELETE FROM tbl_user_cocktail WHERE user_ct_idx=#{feed_idx}
+</delete>
+
+<delete id="delcomt_feed" parameterType="int">
+	DELETE FROM tbl_user_cocktail_comment WHERE user_ct_idx=#{feed_idx}
+</delete>
+
+<delete id="delfeed_heart" parameterType="int">
+	DELETE FROM tbl_user_cocktail_likes WHERE user_ct_idx=#{feed_idx}
+</delete>
+
+<select id="user_ct_like_count" parameterType="String" resultType="_int">
+select count(*) from tbl_user_cocktail where user_id = #{user_id};
+</select>
+
+<select id="myfeed" parameterType="String" resultType="usercoc">
+	select * from tbl_user_cocktail where user_id=#{user_id} limit 3
+</select>
+
+<!-- 칵테일 검색기능 -->
+<select id="searchCocktails" parameterType="String" resultType="coc">
+    SELECT * FROM tbl_cocktail
+    WHERE ct_eng_name LIKE CONCAT('%', #{query}, '%')
+    OR ct_kor_name LIKE CONCAT('%', #{query}, '%')
+</select>
+
+<!--  재료 검색기능 -->
+<select id = "searchIngredients" parameterType = "String" resultType = "ingred">
+    SELECT * FROM tbl_ingredient WHERE ingre_name LIKE CONCAT('%', #{query}, '%') OR ingre_e_name LIKE CONCAT('%', #{query}, '%')
+</select>
+
+<!-- 모달 칵테일 -->
+<select id="searchCocktailModal" parameterType = "int" resultType = "coc">
+   SELECT * FROM tbl_cocktail WHERE ct_idx = #{ct_idx}
+</select>
+
+<!-- 모달 재료 -->
+<select id="searchIngredientModal" parameterType = "int" resultType = "ingred">
+   SELECT * FROM tbl_ingredient WHERE ingre_idx = #{ingre_idx}
+</select>
+
+<!-- 보드 검색기능 -->
+<select id="searchPost" parameterType="String" resultType="post">
+        SELECT * FROM tbl_post
+        WHERE post_title LIKE CONCAT('%', #{query}, '%')
+           OR post_content LIKE CONCAT('%', #{query}, '%')
+           OR user_id LIKE CONCAT('%', #{query}, '%')
+</select>
+
+
+
+</mapper>
