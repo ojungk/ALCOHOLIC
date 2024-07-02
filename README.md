@@ -78,7 +78,7 @@
 
 ## 📖 구성페이지
 
-#### 로그인 -> <a href = "https://github.com/ojungk/ALCOHOLIC/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80(Login)">상세 페이지</a>
+#### 로그인 -> <a href = "https://github.com/ojungk/ALCOHOLIC/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80(Login)">상세 페이지 - Wiki</a>
 - DB검증
 - 로그인 시 세션(session) 생성
 #### 회원가입 -> <a href = "#">상세 페이지 - Wiki</a>
