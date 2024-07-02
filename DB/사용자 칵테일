@@ -1,4 +1,3 @@
-```sql
 -- 테이블 생성 SQL - tbl_user_cocktail
 CREATE TABLE tbl_user_cocktail
 (
