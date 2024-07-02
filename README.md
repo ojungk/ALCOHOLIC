@@ -81,28 +81,28 @@
 #### 로그인 -> <a href = "https://github.com/ojungk/ALCOHOLIC/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80(Login)">상세 페이지</a>
 - DB검증
 - 로그인 시 세션(session) 생성
-#### 회원가입 -> <a href = "#">상세 페이지</a>
+#### 회원가입 -> <a href = "#">상세 페이지 - Wiki</a>
 - ID 중복체크
 - Nickname 중복체크
 - 비밀번호 확인
-#### 메인페이지(Home) -> <a href = "#">상세 페이지</a>
+#### 메인페이지(Home) -> <a href = "#">상세 페이지 - Wiki</a>
 - 간단 추천페이지 이동
-#### 메뉴페이지(Menu) -> <a href = "#">상세 페이지</a>
+#### 메뉴페이지(Menu) -> <a href = "#">상세 페이지 - Wiki</a>
 - 칵테일 조회 / 찜
 - 댓글 작성/수정/삭제
-#### 재료페이지(Ingredient) -> <a href = "#">상세 페이지</a>
+#### 재료페이지(Ingredient) -> <a href = "#">상세 페이지 - Wiki</a>
 - 재료 조회
-#### 게시판(Board) -> <a href = "#">상세 페이지</a>
+#### 게시판(Board) -> <a href = "#">상세 페이지 - Wiki</a>
 - 게시글 작성/수정/삭제
 - 게시글 조회
 - 댓글 작성/수정/삭
-#### 피드(Feed) -> <a href = "#">상세 페이지</a>
+#### 피드(Feed) -> <a href = "#">상세 페이지 - Wiki</a>
 - 피드 작성/수정
 - 댓글 작성/수정/삭제
-#### 마이페이지(MyPage) -> <a href = "#">상세 페이지</a>
+#### 마이페이지(MyPage) -> <a href = "#">상세 페이지 - Wiki</a>
 - 회원정보 변경
 - 이미지 수정
-#### 검색페이지 -> <a href = "#">상세 페이지</a>
+#### 검색페이지 -> <a href = "#">상세 페이지 - Wiki</a>
 - 칵테일 조회
 
 
