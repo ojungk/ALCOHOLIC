@@ -76,7 +76,7 @@
 
 - 사용자 칵테일 선호도 파악 가능
 
-## 📖 구성페이지
+## 📖 주요 기능 구성페이지
 
 #### 로그인 -> <a href = "https://github.com/ojungk/ALCOHOLIC/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8,%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%ED%8E%98%EC%9D%B4%EC%A7%80(Login,signin)">상세 페이지 - Wiki</a>
 - DB검증
@@ -85,8 +85,6 @@
 - ID 중복체크
 - Nickname 중복체크
 - 비밀번호 확인
-#### 메인페이지(Home) -> <a href = "#">상세 페이지 - Wiki</a>
-- 간단 추천페이지 이동
 #### 메뉴페이지(Menu) -> <a href = "#">상세 페이지 - Wiki</a>
 - 칵테일 조회 / 찜
 - 댓글 작성/수정/삭제
