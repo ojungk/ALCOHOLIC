@@ -13,14 +13,20 @@
 
 
 ## 🎈주요 서비스 기능
-***메인 기능***
-#### **1. 칵테일 정보 제공**
+### 1. 조건별 칵테일 & 재료 검색
+### 2. MENU, FEED 즐겨찾기
+### 3. MENU, FEED, BOARD 댓글기능 , 댓글 긍부정 모델
+### 4. 독창적인 나만의 레시피 업로드
+### 5. 커뮤니티
+#### **1. 조건별 칵테일 & 재료 검색**
 <img src = "https://github.com/ojungk/ALCOHOLIC/assets/166587746/9dfdbbe7-f6d8-49bb-8bbf-904818ded04d" width="600" height="450"/><br>
 
 
-- 칵테일 별 댓글 기능. (여러 사용자의 격관적인 평가 가능) <br>
+- 베이스가되는 술과 선택한 술의 도수에 따라 그에맞는 칵테일을 검색할 수 있습니다.
+- 재료의 종류에따라 그에맞는 재료를 검색할 수 있습니다.<br>
 
-#### **2. 칵테일 조건별 검색** , **재료 조건별 검색**
+
+#### **2. MENU, FEED 즐겨찾기**
 ![image](https://github.com/rwd04272/firstrepo/assets/166587746/7f1751e1-37ae-4253-a2ec-5d17ffd64c5a)
 ![image](https://github.com/rwd04272/firstrepo/assets/166587746/124d335f-319b-445d-a54d-ec30907a77f9) <br>
 <img src = "https://github.com/ojungk/ALCOHOLIC/assets/166587746/a306807f-089f-4660-abc7-564e0ccd8f45"  width="400" height="250"/><br>
@@ -30,73 +36,37 @@
 
 
 
-- 술의 종류,도수별 검색 기능.
+- MENU와 FEED에서 마음에드는 칵테일을 즐겨찾기등록하여 MY PAGE에서 한눈에 확인할수있습니다.
 <br>
 <img src = "https://github.com/rwd04272/firstrepo/assets/166587746/effb878f-9822-4ce1-adbe-5520a482eaa3" width="600" height="350"/><br>
 <img src = "https://github.com/rwd04272/firstrepo/assets/166587746/1fe912d1-ed2f-4696-8516-69805f7965e3" width="600" height="350"/><br>
 <img src = "https://github.com/rwd04272/firstrepo/assets/166587746/1fe912d1-ed2f-4696-8516-69805f7965e3" width="600" height="350"/><br>
 
-- 재료 또한 낮은도수,높은도수 구분검색 가능
+- 즐겨찾기에 등록한 칵테일정보로 사용자에게 칵테일을 추천해줍니다.
 
 
 
-#### **3. 칵테일 등록(찜)**
+#### **3. MENU, FEED, BOARD 댓글기능 , 댓글 긍부정 모델)**
 <img src = "https://github.com/rwd04272/firstrepo/assets/166587746/1a3af4a6-2f0b-4b26-9d90-167a556bb2d4" width="600" height="350"/><><br>
-- 찜 누른 칵테일 리스트 확인 가능
-- 다른 사용자가 올린 칵테일도 좋아요 가능
-- 마이페이지 북마크에 등록 <br>
- **사용자별 접근성 향상(사용자의 취향에 맞는 칵테일 등록)**
-
-#### **4. 칵테일 추천!
+- MENU, FEED, BOARD에는 각각 댓글을 등록할 수 있습니다.
+- 등록된 모든 댓글은 긍부정 모델을 통해 긍정적인댓글과 부정적인 댓글로 나뉩니다.
+- 댓글의 긍정,부정수치를 한눈에 확인할 수 있습니다. <br>
+ 
+#### **4. 독창적인 나만의 레시피 업로드
 
 <img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/721c6519-dac1-48e6-bd8a-8526c0929bfa" width="600" height="350"/><br>
 <img src ="https://github.com/ojungk/ALCOHOLIC/assets/166587746/179f2912-22fd-4490-baa4-fe4f69beadef" width="600" height="350"/><br>
-- 사용자가 찜 누른 칵테일의 베이스 술의 종류 , 도수의 정보를 기준으로 사용자마다 다른 칵테일을 추천
-- 추천한 칵테일 찜,댓글 작성(조회) 가능!
+- 사용자들이 자신만의 독특한 레시피를 올릴 수 있는 공간입니다.
+- 댓글과 긍부정모델을 통하여 객관적인 평가를 볼수있습니다.
+
+#### **5. 커뮤니티
+
+
+- 꼭 칵테일에 관한 글이아니더라도 자유롭게 게시글을쓰며 커뮤니케이션을 할 수 있는 공간입니다.
 
 
 
-**부가 기능**
-**1) 커뮤니티 (레시피 공유,후기)**
-- 사용자 자신이 만든 레시피를 등록
-- 댓글을 작성해서 후기 공유 및 피드백
 
-**2) 마이페이지**
-- 마이페이지에서 자신이 올린 게시글을 확인
-- 닉네임 변경,프로필 이미지 수정
-
-**3) 댓글 긍정/부정 비율**
-- 사용자의 댓글의 긍정,부정을 이모티콘 으로 확인 가능.
-  ![image](https://github.com/ojungk/ALCOHOLIC/assets/166587746/ec0ed7ef-aa6a-4a7f-8d1b-f375e0929eb9)
-
-- 사용자 칵테일 선호도 파악 가능
-
-## 📖 주요 기능 구성페이지
-
-#### 로그인 -> <a href = "https://github.com/ojungk/ALCOHOLIC/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%EC%84%B1-%ED%8E%98%EC%9D%B4%EC%A7%80">상세 페이지 - Wiki</a>
-- DB검증
-- 로그인 시 세션(session) 생성
-#### 회원가입 -> <a href = "https://github.com/ojungk/ALCOHOLIC/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%EC%84%B1-%ED%8E%98%EC%9D%B4%EC%A7%80">상세 페이지 - Wiki</a>
-- ID 중복체크
-- Nickname 중복체크
-- 비밀번호 확인
-#### 메뉴페이지(Menu) -> <a href = "#">상세 페이지 - Wiki</a>
-- 칵테일 조회 / 찜
-- 댓글 작성/수정/삭제
-#### 재료페이지(Ingredient) -> <a href = "#">상세 페이지 - Wiki</a>
-- 재료 조회
-#### 게시판(Board) -> <a href = "#">상세 페이지 - Wiki</a>
-- 게시글 작성/수정/삭제
-- 게시글 조회
-- 댓글 작성/수정/삭
-#### 피드(Feed) -> <a href = "#">상세 페이지 - Wiki</a>
-- 피드 작성/수정
-- 댓글 작성/수정/삭제
-#### 마이페이지(MyPage) -> <a href = "#">상세 페이지 - Wiki</a>
-- 회원정보 변경
-- 이미지 수정
-#### 검색페이지 -> <a href = "#">상세 페이지 - Wiki</a>
-- 칵테일 조회
 
 
 
