@@ -18,7 +18,6 @@
 ### 3. MENU, FEED, BOARD 댓글기능 , 댓글 긍부정 모델
 ### 4. 독창적인 나만의 레시피 업로드
 ### 5. 커뮤니티
-### 6. 검색
 #### **1. 조건별 칵테일 & 재료 검색**
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/bd7b1cd6-0253-460c-b2cd-2060398c85b1)
 
@@ -28,7 +27,7 @@
 - 재료의 종류에따라 그에맞는 재료를 검색할 수 있습니다.<br>
 
 
-#### **2. MENU, FEED 즐겨찾기**
+#### 2. MENU, FEED 즐겨찾기
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/469850f2-b8c5-4592-bc5a-4f45a4339078)
 
 - MENU와 FEED에서 마음에드는 칵테일을 즐겨찾기등록하여 MY PAGE에서 한눈에 확인할수있습니다.<br>
@@ -37,7 +36,7 @@
 
 
 
-#### **3. MENU, FEED, BOARD 댓글기능 , 댓글 긍부정 모델)**
+#### 3. MENU, FEED, BOARD 댓글기능 , 댓글 긍부정 모델)
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/c0277ab0-3450-466c-a671-8d1bf9cdc550)
 <br>
 - MENU, FEED, BOARD에는 각각 댓글을 등록할 수 있습니다.
@@ -48,18 +47,18 @@
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/996ad7be-09ae-4a31-a924-10ce9c4554c5)
 - 긍부정 모델로는 교차검증시 평균 정답율이 가장 높은 LogisticRegression모델을 사용하였습니다.<br>
  
-#### **4. 독창적인 나만의 레시피 업로드
+#### 4. 독창적인 나만의 레시피 업로드
 
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/ee6b6e14-647c-4943-aab1-6feaa676e93f)
-
 <br>
+
 - 사용자들이 자신만의 독특한 레시피를 올릴 수 있는 공간입니다.
 
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/d60151a1-da10-4ae7-b5cd-e8ba78db94fc)
 <br>
 - 댓글과 긍부정모델을 통하여 객관적인 평가를 볼수있습니다.
 
-#### **5. 커뮤니티
+#### 5. 커뮤니티
 
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/3edf0c95-067f-4ac9-a6f3-ac9d238aedb5)
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/d6133e92-77b3-4531-92c6-b7182f80f584)
@@ -67,11 +66,7 @@
 - 꼭 칵테일에 관한 글이아니더라도 자유롭게 게시글을쓰며 커뮤니케이션을 할 수 있습니다.
 
 
-#### **6. 검색
 
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/720e208b-3469-43ed-83d6-ff0dfa2eb4bf)
-
-- 검색을 통하여 단어가 포함된 칵테일 또는 재료를 검색할 수 있습니다
 
 
 
