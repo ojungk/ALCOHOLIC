@@ -35,7 +35,8 @@
 
 - MENU와 FEED에서 마음에드는 칵테일을 즐겨찾기등록하여 MY PAGE에서 한눈에 확인할수있습니다.
 <br>
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/1c2680da-1e2f-4c0f-b563-9a1d6be70502)
+![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/c8a793dc-1c4c-4ae4-a206-630f662b61ee)
+
 
 
 - 즐겨찾기에 등록한 칵테일정보로 사용자에게 칵테일을 추천해줍니다.
