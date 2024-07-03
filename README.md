@@ -127,7 +127,7 @@
 ## 💡 서비스 흐름도
 - 로그인/회원가입
 
-<img src = "https://github.com/ojungk/ALCOHOLIC/assets/166770562/82d6ccec-7729-4eae-8233-81627fe64121" width="700" height="600"/><br>
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/166770562/3a7480d2-2314-4c8a-981b-c1dabece67a6" width="700" height="600"/><br>
 
 - 메인 홈페이지
 ![image](https://github.com/ojungk/ALCOHOLIC/assets/166770562/1bdb60d2-b35e-4b97-b7d1-8e494780af6e)
