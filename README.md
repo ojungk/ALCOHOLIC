@@ -124,6 +124,16 @@
 * 24/06/17 ~ 24/07/01
 
 
+## 💡 서비스 흐름도
+- 로그인/회원가입
+
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/166770562/82d6ccec-7729-4eae-8233-81627fe64121" width="700" height="600"/><br>
+
+- 메인 홈페이지
+![image](https://github.com/ojungk/ALCOHOLIC/assets/166770562/1bdb60d2-b35e-4b97-b7d1-8e494780af6e)
+
+
+
 ## 😀 프로젝트 맴버 역할 분담
 
 | 이름   | 담당 업무                   |
