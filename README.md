@@ -36,7 +36,7 @@
 #### **1. 조건별 칵테일 & 재료 검색**
 - 베이스가되는 술과 선택한 술의 도수에 따라 그에맞는 칵테일을 검색할 수 있습니다.
 - 재료의 종류에따라 그에맞는 재료를 검색할 수 있습니다.<br>
-<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/bd7b1cd6-0253-460c-b2cd-2060398c85b1" width="500" height= "300"/>
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/bd7b1cd6-0253-460c-b2cd-2060398c85b1" width="700" height= "400"/>
 
 
 
@@ -62,14 +62,15 @@
 
 - 사용자들이 자신만의 독특한 레시피를 올릴 수 있는 공간입니다.
 - 댓글과 긍부정모델을 통하여 객관적인 평가를 볼수있습니다. <br>
-<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/ee6b6e14-647c-4943-aab1-6feaa676e93f" width = "600" height = "700">
-<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/d60151a1-da10-4ae7-b5cd-e8ba78db94fc" width = "600" height = "600">
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/ee6b6e14-647c-4943-aab1-6feaa676e93f" width = "400" height = "500">
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/d60151a1-da10-4ae7-b5cd-e8ba78db94fc" width = "550" height = "500">
   
 
 #### 5. 커뮤니티
 - 꼭 칵테일에 관한 글이아니더라도 자유롭게 게시글을쓰며 커뮤니케이션을 할 수 있습니다.
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/3edf0c95-067f-4ac9-a6f3-ac9d238aedb5)
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/d6133e92-77b3-4531-92c6-b7182f80f584)
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/3edf0c95-067f-4ac9-a6f3-ac9d238aedb5" width= "450" height ="600">
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/d6133e92-77b3-4531-92c6-b7182f80f584" width= "550" height ="600">
+
 
 
 
