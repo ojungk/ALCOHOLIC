@@ -19,8 +19,7 @@
 ### 4. 독창적인 나만의 레시피 업로드
 ### 5. 커뮤니티
 #### **1. 조건별 칵테일 & 재료 검색**
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/bd7b1cd6-0253-460c-b2cd-2060398c85b1)
-
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/bd7b1cd6-0253-460c-b2cd-2060398c85b1" width="500" height= "300"/>
 
 
 - 베이스가되는 술과 선택한 술의 도수에 따라 그에맞는 칵테일을 검색할 수 있습니다.
@@ -28,23 +27,22 @@
 
 
 #### 2. MENU, FEED 즐겨찾기
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/469850f2-b8c5-4592-bc5a-4f45a4339078)
-
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/469850f2-b8c5-4592-bc5a-4f45a4339078" height = "400">
 - MENU와 FEED에서 마음에드는 칵테일을 즐겨찾기등록하여 MY PAGE에서 한눈에 확인할수있습니다.<br>
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/c8a793dc-1c4c-4ae4-a206-630f662b61ee)
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/c8a793dc-1c4c-4ae4-a206-630f662b61ee" width = "700" height = "400"/><br>
 - 즐겨찾기에 등록한 칵테일정보로 사용자에게 칵테일을 추천해줍니다.
 
 
 
 #### 3. MENU, FEED, BOARD 댓글기능 , 댓글 긍부정 모델)
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/c0277ab0-3450-466c-a671-8d1bf9cdc550)
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/c0277ab0-3450-466c-a671-8d1bf9cdc550" width = "400" height = "300" >
 <br>
-- MENU, FEED, BOARD에는 각각 댓글을 등록할 수 있습니다.
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/db38e0fb-f690-4605-874e-005905cebd28)
+- MENU, FEED, BOARD에는 각각 댓글을 등록할 수 있습니다.<br>
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/db38e0fb-f690-4605-874e-005905cebd28" width = "400" height = "300"><br>
 
 - 등록된 모든 댓글은 긍부정 모델을 통해 긍정적인댓글과 부정적인 댓글로 나뉩니다.
-- 댓글의 긍정,부정수치를 한눈에 확인할 수 있습니다. 
-![image](https://github.com/ojungk/ALCOHOLIC/assets/127484145/996ad7be-09ae-4a31-a924-10ce9c4554c5)
+- 댓글의 긍정,부정수치를 한눈에 확인할 수 있습니다. <br>
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/996ad7be-09ae-4a31-a924-10ce9c4554c5" width = "500" height = "350"><br>
 - 긍부정 모델로는 교차검증시 평균 정답율이 가장 높은 LogisticRegression모델을 사용하였습니다.<br>
  
 #### 4. 독창적인 나만의 레시피 업로드
