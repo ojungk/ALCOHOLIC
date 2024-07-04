@@ -54,9 +54,9 @@
 - 등록된 모든 댓글은 긍부정 모델을 통해 긍정적인댓글과 부정적인 댓글로 나뉩니다.
 - 댓글의 긍정,부정수치를 한눈에 확인할 수 있습니다. <br>
 - 긍부정 모델로는 교차검증시 평균 정답율이 가장 높은 LogisticRegression모델을 사용하였습니다.<br>
-<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/c0277ab0-3450-466c-a671-8d1bf9cdc550" width = "400" height = "300" >
-<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/db38e0fb-f690-4605-874e-005905cebd28" width = "400" height = "300"><br>
-<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/996ad7be-09ae-4a31-a924-10ce9c4554c5" width = "500" height = "350"><br>
+<img src ="https://github.com/ojungk/ALCOHOLIC/assets/127484145/c0277ab0-3450-466c-a671-8d1bf9cdc550" width = "500" height = "300" >
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/db38e0fb-f690-4605-874e-005905cebd28" width = "500" height = "300"><br>
+<img src = "https://github.com/ojungk/ALCOHOLIC/assets/127484145/996ad7be-09ae-4a31-a924-10ce9c4554c5" width = "700" height = "450"><br>
  
 #### 4. 독창적인 나만의 레시피 업로드
 
